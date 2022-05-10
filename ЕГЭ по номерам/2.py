@@ -31,4 +31,3 @@ for p in range(1,q,1):
             break
 
 if flg ==0: print('-1')
-
