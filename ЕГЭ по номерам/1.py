@@ -5,3 +5,5 @@ for n in range(1,457001):
         kol+=1
         print(n)
 print(kol)
+
+
