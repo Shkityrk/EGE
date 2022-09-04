@@ -1,7 +1,0 @@
-a=1
-b=2
-c=3
-for a in range (9):
-    for b in range(9):
-        for c in range(9):
-            print (a,b,c)
