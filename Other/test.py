@@ -1,0 +1,1 @@
+print((1 or 1) and (1 or 0))
