@@ -1,5 +1,6 @@
 for n in range(1,1000):
-    b=bin(int('2'+str(n)))[2:]
+    #b=bin(int('2'+str(n)))[2:]
+    b = bin(int(2*n))[2:]
     s=str(b)
     if s.count('1')%2!=0:s=s+'1'
     else:s=s+'0'

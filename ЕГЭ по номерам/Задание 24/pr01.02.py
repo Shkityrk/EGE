@@ -1,4 +1,4 @@
-s=open("data/24.txt").readline()
+'''s=open("data/24.txt").readline()
 mx=0
 l=1
 for i in range(3, len(s)):
@@ -8,4 +8,10 @@ for i in range(3, len(s)):
         l += 1
         mx = max(l, mx)
 
-print(mx)
+print(mx)'''
+s=open("data/24.txt").readline()
+s=s.replace('O','A').replace('D','C').replace('F','C')
+while 'CAAC' in s:
+    s=s.replace('CAAC','CAA AAC')
+print(max(len(c) for c in s.split()))
+
