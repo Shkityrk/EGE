@@ -1,0 +1,5 @@
+s=open('K/24-19.txt').readline()
+s=s.replace('O','A').replace('C','B').replace('D','B')
+s=s.replace('BA','*').replace('A',' ').replace('B',' ')
+print(s)
+print(max(len(c) for c in s.split()))
