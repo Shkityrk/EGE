@@ -6,8 +6,8 @@ with open('27-105b.txt') as f:
     sum_m = 2*sum(m)
     ps = [sum(m[i]*min(i, n-i)**2 for i in range(n)),
           sum(m[i]*min(abs(i-1), n-abs(i-1))**2 for i in range(n))]
-    #print( 1, ps[0]*k*k )
-    #print( 2, ps[1]*k*k )
+    #print( 1, ps[0]*countA*countA )
+    #print( 2, ps[1]*countA*countA )
     ms = min(ps)
     mi = ps.index(ms)
     rs = ps[1] - ps[0]
@@ -22,6 +22,6 @@ with open('27-105b.txt') as f:
         if s < ms:
             ms = s
             mi = i
-        #print( i+1, s*k*k )
+        #print( i+1, s*countA*countA )
     print( 'Ответ:', mi+1, ms*k*k)
 

@@ -28,10 +28,10 @@ for i in range(start + 1, max(points) + 1):
 	k += w[i + m]
 	k_send -= points.get(i - m - 1, 0)
 	k_send += points.get(i + m, 0)
-	# print(i, k)
+	# print(i, countA)
 	if i not in points:
 		continue
-	# print(i, k)
+	# print(i, countA)
 	if k_send > mx_send:
 		mx_send = k_send
 		mx = k

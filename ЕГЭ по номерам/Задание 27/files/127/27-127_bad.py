@@ -26,7 +26,7 @@ for i in range(count):
 		if j < count:
 			k += data[j] // 50 + bool(data[j] % 50)
 			k_send += data[j]
-	# print(i + 1, k)
+	# print(i + 1, countA)
 	if k_send > mx_send:
 		mx_send = k_send
 		mx = k

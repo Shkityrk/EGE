@@ -12,7 +12,7 @@ for i in range(N-3):
       for m in range(k+1,N):
         s = data[i] + data[j] + data[k] + data[m]
         if s % 4 == 0:
-          #print( (data[i], data[j], data[k], data[m]), s )
+          #print( (data[i], data[j], data[countA], data[m]), s )
           if s < mi: mi = s
 
 print( mi )

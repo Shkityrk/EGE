@@ -24,7 +24,7 @@ cost = [0] * n
 for i in range(dist + 1):
     cost[0] += i * data[i]
     cost[0] += i * data[-i]
-    # print(k, st, dist_a, dist_b)
+    # print(countA, st, dist_a, dist_b)
 # стоимость всех остальных
 for i in range(1, n):
     cost[i] = cost[i - 1] + plus[i - 1] - minus[i - 1]

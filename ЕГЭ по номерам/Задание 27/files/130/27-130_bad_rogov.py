@@ -21,7 +21,7 @@ for i in range(n // 2):
             st += dist_a * data[k]
         else:
             st += dist_b * data[k]
-        # print(k, st, dist_a, dist_b)
+        # print(countA, st, dist_a, dist_b)
     # print(i, j, st)
     mn = min(mn, st)
 print(mn)

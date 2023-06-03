@@ -50,15 +50,15 @@ passFor = [ (pos+count-1, money, [pos])
 for i in range(N-1):
   pos = int( F.readline() )
   #print( '*', pos )
-  k = 0
-  while k < len(passFor):
-    posPaid, sumMoney, way = passFor[k]
+  countA = 0
+  while countA < len(passFor):
+    posPaid, sumMoney, way = passFor[countA]
     if pos > posPaid:
-       passFor.pop(k)
-       k -= 1
+       passFor.pop(countA)
+       countA -= 1
        for count, money in tariff.items():
           passFor += [ (pos+count-1, sumMoney+money, way+[pos]) ]
-    k += 1
+    countA += 1
   passFor = reduce( passFor )
   #print( passFor )
 

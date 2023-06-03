@@ -10,7 +10,7 @@ for i in range(1,N):
   R = list(map(int, Fin.readline().split()))
   LCurLen = curLen
   curLen = [1, 1]
-  for k in range(2): # k = 0 => R не повернута, k = 1 => R повернута
+  for k in range(2): # countA = 0 => R не повернута, countA = 1 => R повернута
     if L[1] == R[k]:
       curLen[k] = LCurLen[0] + 1
     elif L[0] == R[k]:
