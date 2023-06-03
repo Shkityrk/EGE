@@ -16,7 +16,7 @@ def f(n):
 print(f(50))
 k=0
 '''while n!=0:
-    k+=n%10
+    countA+=n%10
     n//=10
-print(k)
+print(countA)
 '''

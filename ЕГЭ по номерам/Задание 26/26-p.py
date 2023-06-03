@@ -3,6 +3,6 @@ Type "help", "copyright", "credits" or "license()" for more information.
 
 ===== RESTART: C:/Users/gymn-/AppData/Local/Programs/Python/Python310/k.py =====
 Traceback (most recent call last):
-  File "C:/Users/gymn-/AppData/Local/Programs/Python/Python310/k.py", line 1, in <module>
+  File "C:/Users/gymn-/AppData/Local/Programs/Python/Python310/countA.py", line 1, in <module>
     f=[c[:-1] for c in open('data/26-j1.txt').readlines()]
 FileNotFoundError: [Errno 2] No such file or directory: 'data/26-j1.txt'
