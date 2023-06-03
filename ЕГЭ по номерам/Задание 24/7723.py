@@ -1,0 +1,5 @@
+s=open('data/24_7723.txt').readline()
+s=s.replace('R','D').replace('8','1')
+s=s.replace('11D','*')
+s=s.replace('1',' ').replace('D',' ')
+print(max(len(c) for c in s.split()))

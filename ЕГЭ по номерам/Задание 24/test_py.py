@@ -1,0 +1,7 @@
+f=open('data/24.txt').readline()
+s=str(f)
+while 'PP' in s : s=s.replace('PP','P P')
+while 'NN' in s:s=s.replace('NN','N N')
+while 'OO' in s:s=s.replace('OO','O O')
+s=s.split()
+print(len(max( s, key=len)))
